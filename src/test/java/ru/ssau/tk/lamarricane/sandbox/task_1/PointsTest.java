@@ -1,6 +1,8 @@
 package ru.ssau.tk.lamarricane.sandbox.task_1;
 
 import org.testng.annotations.Test;
+import ru.ssau.tk.lamarricane.sandbox.task_1.Point;
+import ru.ssau.tk.lamarricane.sandbox.task_1.Points;
 
 import static org.testng.Assert.*;
 

@@ -1,6 +1,7 @@
 package ru.ssau.tk.lamarricane.sandbox.task_1;
 
 import org.testng.annotations.Test;
+import ru.ssau.tk.lamarricane.sandbox.task_1.Person;
 
 import static org.testng.Assert.*;
 
