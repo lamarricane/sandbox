@@ -27,4 +27,12 @@ public class Points {
     public static double length(Point point) {
         return point.length();
     }
+
+    public static Point opposite(Point variable) {
+        return new Point(variable.x * (-1), variable.y * (-1), variable.z * (-1));
+    }
+
+    public static Point inverse(Point variable) {
+        return new Point(1 / variable.x, 1 / variable.y, 1 / variable.z);
+    }
 }
