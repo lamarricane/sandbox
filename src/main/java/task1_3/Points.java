@@ -40,7 +40,7 @@ public class Points {
         return var1.x * var2.x + var1.y * var2.y + var1.z * var2.z;
     }
 
-    public static Point vectorProduct(Point var1, Point var2){
-        return new Point (var1.y * var2.z - var1.z * var2.y, var1.z * var2.x - var1.x * var2.z, var1.x * var2.y - var1.y * var2.x);
+    public static Point vectorProduct(Point var1, Point var2) {
+        return new Point(var1.y * var2.z - var1.z * var2.y, var1.z * var2.x - var1.x * var2.z, var1.x * var2.y - var1.y * var2.x);
     }
 }
