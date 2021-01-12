@@ -7,23 +7,25 @@ public class Person {
     private String lastName;
     private int passportId;
 
-    Person () {
-        firstName="Имя";
-        lastName="Фамилия";
-        passportId=0;
-    }
-    Person (String firstName,String lastName,int passportId){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.passportId=passportId;
-    }
-    public Person (String firstName,String lastName) {
-        this.firstName=firstName;
-        this.lastName=lastName;
+    Person() {
+        firstName = "Имя";
+        lastName = "Фамилия";
+        passportId = 0;
     }
 
-    Person (int passportId) {
-        this.passportId=passportId;
+    Person(String firstName, String lastName, int passportId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportId = passportId;
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    Person(int passportId) {
+        this.passportId = passportId;
     }
 
     public String getFirstName() {
