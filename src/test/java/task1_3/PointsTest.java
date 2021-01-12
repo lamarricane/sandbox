@@ -60,4 +60,9 @@ public class PointsTest {
     public void TestScalarProduct() {
         assertEquals(Points.scalarProduct(new Point(1.0, 0.5, 2.0), new Point(3.0, -0.5, 4.0)), 10.75, DELTA);
     }
+
+    @Test
+    public void testVectorProduct() {
+        assertTrue(Points.equalsApproximately(Points.vectorProduct(new Point(3.0, 2.0, 1.0), new Point(-1.0, 4.0, 5.0)), new Point(6.0, -16.0, 14.0)));
+    }
 }
