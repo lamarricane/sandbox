@@ -1,4 +1,4 @@
-package ru.ssau.tk.lamarricane.sandbox.task1_1;
+package ru.ssau.tk.lamarricane.sandbox.task_1;
 
 import com.sun.org.apache.xerces.internal.xs.StringList;
 

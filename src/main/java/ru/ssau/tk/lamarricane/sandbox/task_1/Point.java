@@ -1,4 +1,4 @@
-package task1_3;
+package ru.ssau.tk.lamarricane.sandbox.task_1;
 
 public class Point {
     public final double x;

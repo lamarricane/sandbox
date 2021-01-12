@@ -1,4 +1,6 @@
-package task1_3;
+package ru.ssau.tk.lamarricane.sandbox.task_1;
+
+import ru.ssau.tk.lamarricane.sandbox.task_1.Point;
 
 public class Points {
     public static double DELTA = 0.00005;
