@@ -25,4 +25,10 @@ public class NamedPointTest {
         assertEquals(thirdPoint.getName(), "Quesadilla");
         assertEquals(firstPoint.getName(), "Fajita");
     }
+
+    @Test
+    public void testReset() {
+        secondPoint.reset();
+        assertEquals(secondPoint.getName(), "Absent");
+    }
 }
