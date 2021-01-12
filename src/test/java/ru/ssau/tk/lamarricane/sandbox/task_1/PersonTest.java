@@ -42,4 +42,14 @@ public class PersonTest {
         assertEquals(ThirdPerson.getPassportId(), 18);
         assertNotEquals(SecondPerson.getPassportId(), 30);
     }
+
+    @Test
+    public void testGender() {
+        FirstPerson.setGender(Gender.MALE);
+        SecondPerson.setGender(Gender.MALE);
+        ThirdPerson.setGender(Gender.FEMALE);
+        assertEquals(FirstPerson.getGender(), Gender.MALE);
+        assertEquals(SecondPerson.getGender(), Gender.MALE);
+        assertEquals(ThirdPerson.getGender(), Gender.FEMALE);
+    }
 }

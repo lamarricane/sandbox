@@ -6,11 +6,21 @@ public class Person {
     private String firstName;
     private String lastName;
     private int passportId;
+    Gender gender;
+
 
     Person() {
         firstName = "Имя";
         lastName = "Фамилия";
         passportId = 0;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 
     Person(String firstName, String lastName, int passportId) {
