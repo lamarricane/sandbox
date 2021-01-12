@@ -1,6 +1,7 @@
 package task1_3;
 
 public class Points {
+    public static double DELTA = 0.00005;
     private Points() {
     }
 
@@ -42,5 +43,13 @@ public class Points {
 
     public static Point vectorProduct(Point var1, Point var2) {
         return new Point(var1.y * var2.z - var1.z * var2.y, var1.z * var2.x - var1.x * var2.z, var1.x * var2.y - var1.y * var2.x);
+    }
+
+    private static boolean equalsApproximately(double variable1, double variable2) {
+        return Math.abs(variable1 - variable2) < DELTA;
+    }
+
+    public static boolean equalsApproximately(Point var1, Point var2) {
+        return equalsApproximately(var1.x, var2.x) && equalsApproximately(var1.y, var2.y) && equalsApproximately(var1.z, var2.z);
     }
 }
