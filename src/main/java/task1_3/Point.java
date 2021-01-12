@@ -18,4 +18,8 @@ public class Point {
         Point point4 = new Point(2, 2, 2);
         Point point5 = new Point(3, 7, 0);
     }
+
+    public double length() {
+        return Math.sqrt(x * x + y * y + z * z);
+    }
 }
