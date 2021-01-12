@@ -13,7 +13,7 @@ public class IdenticalOperationTest {
 
     @Test
     public void testApply() {
-        assertEquals(Identical.apply(100), 100, DELTA);
+        assertEquals(Identical.apply(4221), 4221, DELTA);
         assertEquals(Identical.apply(NEGATIVE_INFINITY), NEGATIVE_INFINITY, DELTA);
         assertEquals(Identical.apply(POSITIVE_INFINITY), POSITIVE_INFINITY, DELTA);
     }
