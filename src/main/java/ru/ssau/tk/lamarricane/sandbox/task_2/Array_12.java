@@ -1,7 +1,7 @@
 package ru.ssau.tk.lamarricane.sandbox.task_2;
 
 public class Array_12 {
-    static double[] massiv(float number) {
+    static double[] massive(float number) {
         int count = 0;
         for (int i = 1; i < Math.sqrt(number); i++) {
             if (number % i == 0) {

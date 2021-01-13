@@ -8,8 +8,8 @@ public class Array_12Test {
     private static final double DELTA = 0.0001;
 
     @Test
-    public void massiv() {
-        double[] firstArray = Array_12.massiv(6);
+    public void testArray() {
+        double[] firstArray = Array_12.massive(6);
         assertEquals(firstArray[0], 1, DELTA);
         assertEquals(firstArray[1], 2, DELTA);
         assertEquals(firstArray[2], 3, DELTA);
