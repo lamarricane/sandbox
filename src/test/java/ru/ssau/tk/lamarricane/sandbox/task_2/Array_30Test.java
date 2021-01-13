@@ -8,6 +8,6 @@ public class Array_30Test {
 
     @Test
     public void testArray() {
-        assertEquals(Array_30.massive(3), new int[][]{{1, 2, 3}, {4, 5}, {6}});
+        assertEquals(Array_30.massive(), new int[][]{{1, 2, 3}, {4, 5}, {6}});
     }
 }
