@@ -5,11 +5,11 @@ import java.util.*;
 public class Array_21 {
     static int massive(int[] array) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < array.length; i++) {
-            if (!map.containsKey(array[i])) {
-                map.put(array[i], 1);
+        for (int j : array) {
+            if (!map.containsKey(j)) {
+                map.put(j, 1);
             } else {
-                map.put(array[i], map.get(array[i]) + 1);
+                map.put(j, map.get(j) + 1);
             }
         }
         return Collections.max(map.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey();
