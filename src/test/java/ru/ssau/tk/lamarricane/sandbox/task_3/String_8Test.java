@@ -8,6 +8,6 @@ public class String_8Test {
     @Test
     public void testIndexString() {
         assertEquals(String_8.getIndexString("Carbonara", "Ca"), -1);
-        assertEquals(String_8.getIndexString("Pizza pasta", "pasta"),6);
+        assertEquals(String_8.getIndexString("Pizza pasta", "pasta"), 6);
     }
 }
