@@ -28,6 +28,13 @@ public class Person {
         this.passportId = passportId;
     }
 
+    public Person(String firstName, String lastName, int passportId, Gender gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportId = passportId;
+        this.gender = gender;
+    }
+
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;

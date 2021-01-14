@@ -1,7 +1,6 @@
 package ru.ssau.tk.lamarricane.sandbox.task_1;
 
 import org.testng.annotations.Test;
-import ru.ssau.tk.lamarricane.sandbox.task_1.Person;
 
 import static org.testng.Assert.*;
 
@@ -51,5 +50,11 @@ public class PersonTest {
         assertEquals(FirstPerson.getGender(), Gender.MALE);
         assertEquals(SecondPerson.getGender(), Gender.MALE);
         assertEquals(ThirdPerson.getGender(), Gender.FEMALE);
+    }
+
+    @Test
+    public void testToString() {
+        Person per1 = new Person("Uzumaki", "Naruto");
+        assertEquals(FirstPerson.toString(), "Uzumaki Naruto");
     }
 }
