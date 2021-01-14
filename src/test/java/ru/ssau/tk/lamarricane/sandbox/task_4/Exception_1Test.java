@@ -9,7 +9,7 @@ import static org.testng.Assert.*;
 public class Exception_1Test {
 
     @Test
-    public void testGetObjectPerson() {
+    public void testGetObjectDescription() {
         Person p1 = new Person("Coralina", "Jons");
         assertEquals(Exception_1.objPerson(p1), "Coralina Jons");
         Person p2 = new Person(null, null);
