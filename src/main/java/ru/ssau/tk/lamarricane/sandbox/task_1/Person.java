@@ -8,7 +8,6 @@ public class Person {
     private int passportId;
     Gender gender;
 
-
     Person() {
         firstName = "Имя";
         lastName = "Фамилия";
@@ -55,12 +54,26 @@ public class Person {
     }
 
     public int getPassportId() {
-
         return passportId;
     }
 
     public void setPassportId(int passportId) {
-
         this.passportId = passportId;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + (firstName.isEmpty() || lastName.isEmpty() ? "" : " ") + lastName;
+    }
+
+    public static void main(String[] args) {
+        Person firstPerson = new Person();
+        Person secondPerson = new Person("Coralina", "Jons");
+        Person thirdPerson = new Person("Coralina", "Jons", 463646);
+        Person fourthPerson = new Person(132398);
+        System.out.println(firstPerson.getPassportId());
+        System.out.println(secondPerson.getFirstName());
+        System.out.println(thirdPerson.getPassportId());
+        System.out.println(fourthPerson.getLastName());
     }
 }
