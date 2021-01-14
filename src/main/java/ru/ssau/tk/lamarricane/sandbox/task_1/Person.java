@@ -1,14 +1,14 @@
 package ru.ssau.tk.lamarricane.sandbox.task_1;
 
-import com.sun.org.apache.xerces.internal.xs.StringList;
+import java.io.Serializable;
 
-public class Person {
+public class Person implements Serializable {
     private String firstName;
     private String lastName;
     private int passportId;
     Gender gender;
 
-    Person() {
+    public Person() {
         firstName = "Имя";
         lastName = "Фамилия";
         passportId = 0;
