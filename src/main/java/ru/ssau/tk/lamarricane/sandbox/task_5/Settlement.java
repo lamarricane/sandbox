@@ -1,6 +1,4 @@
-package ru.ssau.tk.lamarricane.sandbox.task_5.Collection_2;
-
-import ru.ssau.tk.lamarricane.sandbox.task_5.Collection_1.Location;
+package ru.ssau.tk.lamarricane.sandbox.task_5;
 
 public class Settlement extends Location {
     private int settlement;
@@ -20,5 +18,10 @@ public class Settlement extends Location {
 
     public void setSettlement(int settlement) {
         this.settlement = settlement;
+    }
+
+    @Override
+    public String toString() {
+        return "Settlement: Type: " + type + "; Name: " + getName() + "; Latitude: " + getLatitude() + "; Longitude: " + getLongitude() + ".";
     }
 }

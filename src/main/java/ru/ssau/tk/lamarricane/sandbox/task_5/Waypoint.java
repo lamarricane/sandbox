@@ -1,11 +1,9 @@
-package ru.ssau.tk.lamarricane.sandbox.task_5.Collection_2;
-
-import ru.ssau.tk.lamarricane.sandbox.task_5.Collection_1.Location;
-import ru.ssau.tk.lamarricane.sandbox.task_5.Collection_1.WaypointType;
+package ru.ssau.tk.lamarricane.sandbox.task_5;
 
 public class Waypoint extends Location {
     private WaypointType type;
     private Settlement settlement;
+
 
     public Settlement getSettlement() {
         return settlement;
@@ -21,5 +19,10 @@ public class Waypoint extends Location {
 
     public void setType(WaypointType type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Waypoint: Type: " + type + "; Name: " + getName() + "; Latitude: " + getLatitude() + "; Longitude: " + getLongitude() + ".";
     }
 }

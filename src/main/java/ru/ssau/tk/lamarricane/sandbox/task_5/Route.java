@@ -1,6 +1,4 @@
-package ru.ssau.tk.lamarricane.sandbox.task_5.Collection_2;
-
-import ru.ssau.tk.lamarricane.sandbox.task_5.Collection_1.Location;
+package ru.ssau.tk.lamarricane.sandbox.task_5;
 
 import java.util.ArrayList;
 
